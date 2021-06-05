@@ -1,12 +1,4 @@
 class Contact {
-  firstName;
-  lastname;
-  address;
-  city;
-  state;
-  zip;
-  phone;
-  email;
   constructor(firstname, lastname, address, city, state, zip, phone, email) {
     this.firstName = firstname;
     this.lastname = lastname;
@@ -17,16 +9,5 @@ class Contact {
     this.phone = phone;
     this.email = email;
   }
-
-  get getfirstName() {
-    return this.firstName;
-  }
-  set setfirstName(firstname) {
-    this.firstName = firstname;
-  }
-
-  printData() {
-    console.log(`${this.firstName} ${this.lastname}`);
-  }
 }
-module.exports = Contact
+module.exports = Contact;

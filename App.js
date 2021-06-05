@@ -11,4 +11,4 @@ let contact = new Contact(
   "john.doe@compass.com"
 );
 
-console.log(contact.firstName);
+console.log(contact);
