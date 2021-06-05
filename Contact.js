@@ -29,3 +29,4 @@ class Contact {
     console.log(`${this.firstName} ${this.lastname}`);
   }
 }
+module.exports = Contact
