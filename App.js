@@ -15,13 +15,13 @@ while (isContinue) {
       Controller.addContact();
       break;
     case "2":
-      console.log(input);
+      Controller.deleteContact();
       break;
     case "3":
-      console.log(input);
+      Controller.editContact();
       break;
     case "4":
-      console.log(input);
+      Controller.showContact();
       break;
     case "5":
       console.log(input);
