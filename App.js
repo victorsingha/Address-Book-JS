@@ -1,4 +1,5 @@
 const Contact = require("./Contact");
+const Controller = require("./Controller");
 const prompt = require("prompt-sync")();
 
 let contact = new Contact(
@@ -22,7 +23,7 @@ while (isContinue) {
   let input = prompt();
   switch (input) {
     case "1":
-      console.log(input);
+      Controller.addContact();
       break;
     case "2":
       console.log(input);
