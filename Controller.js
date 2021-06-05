@@ -27,6 +27,8 @@ function addContact() {
 }
 function deleteContact() {}
 function editContact() {}
-function showContact() {}
+function showContact() {
+  console.log(contactList);
+}
 
 module.exports = { addContact, deleteContact, editContact, showContact };
