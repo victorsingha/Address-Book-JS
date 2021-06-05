@@ -1,17 +1,6 @@
-const Contact = require("./Contact");
 const Controller = require("./Controller");
 const prompt = require("prompt-sync")();
 
-let contact = new Contact(
-  "john",
-  "doe",
-  "#432 baker streer",
-  "pune",
-  "mumbai",
-  332333,
-  6455463372,
-  "john.doe@compass.com"
-);
 isContinue = true;
 while (isContinue) {
   console.log(`Enter Choice:
