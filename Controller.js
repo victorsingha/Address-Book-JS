@@ -25,8 +25,23 @@ function addContact() {
   );
   contactList.push(contact);
 }
+var removeByAttr = function (arr, attr, value) {
+  var i = arr.length;
+  while (i--) {
+    if (
+      arr[i] &&
+      arr[i].hasOwnProperty(attr) &&
+      arguments.length > 2 &&
+      arr[i][attr] === value
+    ) {
+      arr.splice(i, 1);
+    }
+  }
+  return arr;
+};
 function deleteContact() {
   const firstname = prompt("Enter firstname : ");
+  contactList = removeByAttr(contactList, "firstname", firstname);
 }
 function editContact() {}
 function showContact() {
