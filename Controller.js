@@ -25,7 +25,9 @@ function addContact() {
   );
   contactList.push(contact);
 }
-function deleteContact() {}
+function deleteContact() {
+  const firstname = prompt("Enter firstname : ");
+}
 function editContact() {}
 function showContact() {
   console.log(contactList);
